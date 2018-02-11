@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Arial (Hebrew)', Arial, sans-serif;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.tab {
+    position: relative;
+    width: 293px;
+    height: 355px;
+    float: right;
+    
+}
+
+.tab > img {
+    border: 0px solid #fff;
+    border-bottom-right-radius: 40px;
+}
+
+.text-tab {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 248px;
+    height: 97px;
+    background-color: rgba( 120, 120, 120, 0.9);
+    border: 0px solid #fff;
+    border-bottom-right-radius: 40px;
+    color: #fff;
+}
+
+.text-tab p {
+    font-size: 13px;
+    line-height: 13px;
+    margin-top: 0px;
+    padding:  4px 8px 0px;
+}
+.text-tab h3 {
+    font-size: 14px;
+    font-weight: bold;
+    padding:5px 8px 0 0;
+}
+.text-tab a {
+    font-size: 13px;
+    display: block;
+    text-align: left;
+    color: #fff;
+    padding-left: 8px;
+}
