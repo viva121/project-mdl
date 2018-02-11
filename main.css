@@ -113,3 +113,47 @@ nav ul li:last-child a {
     padding-left: 8px;
 }
 
+footer {
+    height: 38px;
+    background: #909090 url('images/footer_bg.png')  repeat-x left top;
+}
+.footer-content {
+    width: 900px;
+    margin: 0 auto;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li:first-child {
+    padding: 18px 5px;
+}
+
+footer ul li span {
+    display: inline-block;
+    width: 17px;
+    height: 15px;
+    background-image: url('images/menu_home.png');
+    background-position: right bottom;
+    
+}
+
+footer ul li a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px;
+    border-right: 1px solid #afafaf;
+}
+footer ul li:first-child a {
+    border: none;
+}
+footer ul li:last-child a {
+    border-left: none;
+}
