@@ -20,7 +20,31 @@ body {
 nav {
     height:106px;
     margin: 0 0 32px;
+    position: relative;
 }
+.logo {
+    position: absolute;
+    right: -9px;
+    top: 20px;
+}
+
+form {
+    text-align: left;
+    margin: 20px 0 0 40px;
+    height: 20px;
+}
+input {
+    width: 135px;
+    height: 20px;
+    border: 1px solid #999;
+    border-top-right-radius: 12px; 
+    
+}
+
+form img {
+    padding-top: 0px;
+}
+
 main {
     
 }
@@ -33,6 +57,8 @@ main {
 
 nav ul {
     list-style: none;
+    margin-right: 120px;
+    margin-top: 15px;
 }
 
 nav ul li {
@@ -43,7 +69,7 @@ nav ul li:first-child {
     padding: 18px 5px;
 }
 
-nav ul li span {
+nav > ul li span {
     display: inline-block;
     width: 17px;
     height: 15px;
@@ -58,15 +84,53 @@ nav ul li a {
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
-    padding: 18px;
+    padding: 0 14px;
     border-left: 1px solid #757575;
     border-right: 1px solid #afafaf;
 }
-nav ul li:first-child a {
+
+nav ul li a:hover {
+    color:#005ca0;
+    text-decoration: underline;
+}
+
+nav > ul li:first-child a {
     border: none;
 }
-nav ul li:last-child a {
+nav > ul li:last-child a {
     border-left: none;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+nav ul.dropdown {
+    position: absolute;
+    top: 31px;
+    right: 0;
+    margin: 0;
+    z-index: 2;
+    background-color: #909090;
+    display: block;
+}
+
+nav ul.dropdown li a {
+    border: none;
+    padding: 5px;
+    
+}
+
+nav ul.dropdown li {
+    border-bottom: 1px solid #c9c9c9;
+}
+
+nav ul.dropdown li:first-child {
+    padding: 0;
+}
+
+nav ul.dropdown li:hover {
+    background-color: #b3b3b3;
 }
 
 .tab {
