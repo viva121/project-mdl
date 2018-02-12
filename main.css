@@ -156,6 +156,47 @@ main .last {
     float: left;
     margin: 22px 0 0 23px;
 }
+.tab2 a .readMore {
+    width: 200px;
+}
+.tab2 a.readMore img {
+    margin: 0;
+    display: inline;
+}
+
+.tab2.last img {
+    float: left; 
+    margin-left: 10px;
+}
+
+.tab2 ul {
+    list-style: none;
+    width:30%;
+    display: block;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.tab2 ul li {
+    display:block;
+    float: none;
+    text-align: right;
+    width: 70px;
+}
+
+.tab2 ul li a {
+    display:block;
+    text-align: right;
+    float: none;
+    line-height: 24px;
+    margin-top: 0;
+}
+
+.tab2 ul li a img {
+    display: inline-block;
+    padding-top: 8px;
+    float: right;
+}
 
 footer {
     height: 38px;
