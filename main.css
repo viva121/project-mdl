@@ -25,24 +25,49 @@ nav {
 .logo {
     position: absolute;
     right: -9px;
-    top: 20px;
+    top: 40px;
 }
 
 form {
+	
     text-align: left;
-    margin: 20px 0 0 40px;
-    height: 20px;
+    margin: 20px 0 0 15px;
+    height: 19px;
+	width: 160px;
+	float: left;
 }
 input {
     width: 135px;
-    height: 20px;
-    border: 1px solid #999;
+    height: 19px;
+    border: 0px solid #999;
     border-top-right-radius: 12px; 
     
 }
 
-form img {
-    padding-top: 0px;
+input[type=submit] {
+	vertical-align:top;
+	background: url("images/search_button.png") no-repeat bottom right;
+    width: 20px;
+	height: 19px;
+	border: 0px solid #999;
+	border-radius: 0;
+}
+
+.eng {
+    float: left;
+	margin:25px 0 0 20px;
+}
+
+.eng a {
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.eng a:hover {
+	color:#005ca0;
+    text-decoration: underline;
+	
 }
 
 main {
@@ -69,7 +94,7 @@ nav ul li:first-child {
     padding: 18px 5px;
 }
 
-nav > ul li span {
+nav  ul li span {
     display: inline-block;
     width: 17px;
     height: 15px;
@@ -84,7 +109,7 @@ nav ul li a {
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
-    padding: 0 14px;
+    padding: 0 17px 10px 16px;
     border-left: 1px solid #757575;
     border-right: 1px solid #afafaf;
 }
@@ -94,10 +119,10 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-nav > ul li:first-child a {
+nav  ul li:first-child a {
     border: none;
 }
-nav > ul li:last-child a {
+nav  ul li:last-child a {
     border-left: none;
 }
 
@@ -105,24 +130,33 @@ nav > ul li:last-child a {
     position: relative;
 }
 
+.dropdown {
+	background: #909090 url("images/menu_dropdown_bg.png") repeat-x 0 0;
+	display: none;
+}
+
+.dropdown-container:hover .dropdown {
+	display: block;
+}
+
 nav ul.dropdown {
     position: absolute;
-    top: 31px;
-    right: 0;
+    top: 20px;
+    right: 25px;
     margin: 0;
+	width: 120px;
     z-index: 2;
-    background-color: #909090;
-    display: block;
 }
 
 nav ul.dropdown li a {
     border: none;
     padding: 5px;
-    
+    display: block;
 }
 
 nav ul.dropdown li {
     border-bottom: 1px solid #c9c9c9;
+	display: block;
 }
 
 nav ul.dropdown li:first-child {
@@ -265,6 +299,9 @@ main .last {
 footer {
     height: 38px;
     background: #909090 url('images/footer_bg.png')  repeat-x left top;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 .footer-content {
     width: 900px;
@@ -273,36 +310,34 @@ footer {
 
 footer ul {
     list-style: none;
+	display: table;
+	float: right;
+	
 }
 
 footer ul li {
     display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	padding: 0 4px;
+	line-height: 30px;
+	
 }
 
-footer ul li:first-child {
-    padding: 18px 5px;
+footer ul li img {
+    vertical-align: middle;
 }
 
-footer ul li span {
-    display: inline-block;
-    width: 17px;
-    height: 15px;
-    background-image: url('images/menu_home.png');
-    background-position: right bottom;
-    
-}
 
 footer ul li a {
     color: #fff;
-    font-size: 14px;
+    
     text-decoration: none;
     display: inline-block;
-    padding: 4px;
-    border-right: 1px solid #afafaf;
+    padding: 4px 1px;
+    
 }
-footer ul li:first-child a {
-    border: none;
-}
-footer ul li:last-child a {
-    border-left: none;
+footer > div > a > img {
+	float: left;
+	padding-top: 10px;
 }

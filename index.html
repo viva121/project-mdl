@@ -8,27 +8,35 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
-<body>
+<body onload="displayNextImage()">
 <div class="container">
 <nav>
     <img class="logo" src="images/paz_logo.png" alt="paz">
-    <form><input type="text"><img src="images/search_button.png" alt="search">
+   <div class="row"> <form><input type="text" placeholder="רשום מילת חיפוס" ><input type="submit" value="">
     
     </form>
+	   <div class="eng"><a href="#">English</a></div></div>
     <ul>
         <li><a href="#"><span></span></a></li><!--
         --><li  class="dropdown-container"><a href="#">אודות</a>
             <ul  class="dropdown">
                     <li><a href="#">אודות</a></li>
-                    <li><a href="#">אודות</a></li>
-                    <li><a href="#">אודות</a></li>
-                    <li><a href="#">אודות</a></li>
-                    <li><a href="#">אודות</a></li>
-                    <li><a href="#">אודות</a></li>
-                    <li><a href="#">אודות</a></li>
+                    <li><a href="#">היסטוריה</a></li>
+                    <li><a href="#">חזון וערכים</a></li>
+                    <li><a href="#">מבנה הקבוצה</a></li>
+                    <li><a href="#">חברי דירקטוריון</a></li>
+                    <li><a href="#">הנהלת הקבוצה</a></li>
+                    <li><a href="#">פרסים והוקרה</a></li>
             </ul>
         </li><!--
-    --><li><a href="#">חטיבות</a></li><!--
+    --><li class="dropdown-container"><a href="#">חטיבות</a>
+			<ul  class="dropdown">
+                    <li><a href="#">חטיבות</a></li>
+					<li><a href="#">קמעונאות ומסחר</a></li>
+					<li><a href="#">תעשיות ושירותים</a></li>
+					<li><a href="#">זיקוק</a></li>
+            </ul>
+		</li><!--
 --><li><a href="#">אחריות תאגידית</a></li><!--
 --><li><a href="#">קשרי משקיעים</a></li><!--
 --><li><a href="#">התחנות שלנו</a></li><!--
@@ -86,7 +94,7 @@
 
     <div class="tab2 row">
         <h3>yellow click&pick;</h3>
-        <img src="images/paz_250x110103131473.jpg" alt="2">
+        <img id="img-rplce" src="images/paz_250x110103131473.jpg"  alt="2">
         <a href="#" class="readMore">
             <span>קרא עוד</span>&nbsp;<img src="images/read_more_yellow.png" alt="<">
         </a>
@@ -107,18 +115,30 @@
 </main>
 </div> 
 <footer>
-    <div class="footer-content">
+    <div class="footer-content row">
         <ul>
-            <li><a hraf="#"></a></li>
-            <li><a hraf="#">עמוד הבית</a></li>
-            <li><a hraf="#"></a></li>
-            <li><a hraf="#"></a></li>
-            <li><a hraf="#"></a></li>
-            <li><a hraf="#"></a></li>
-            <li><a hraf="#"></a></li>
-            <li><a hraf="#"></a></li>
-            <li><a hraf="#"></a></li>
+            <li><a href="#"><img src="images/fb_icon.png" alt="fb"></a></li>
+			<li>|</li>
+			<li><a href="#">-</a></li>
+			<li>|</li>
+			<li><a href="#"></a></li>
+            <li><a href="#">עמוד הבית</a></li>
+            <li>|</li>
+            <li><a href="#">מחירונים</a></li>
+			<li>|</li>
+            <li><a href="#">קריירה</a></li>
+            <li>|</li>
+            <li><a href="#">תנאי שימוש</a></li>
+            <li>|</li>
+			<li><a href="#">נגישות</a></li>
+            <li>|</li>
+            <li><a href="#">מפת אתר</a></li>
+            <li>|</li>
+            <li><a href="#">צור קשר</a></li>
+			<li>|</li>
+            <li><a href="#">הודעות והליכים משפטיים</a></li>
         </ul>
+	<a href="#"><img src="images/white_logo.png" alt="c digital"></a>	
     </div>
 </footer>   
 </body>
